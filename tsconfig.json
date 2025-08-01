@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",                  // Modern JS target
+    "module": "NodeNext",                  // Use ESM
+    "moduleResolution": "NodeNext",          // Use Node module resolution
+    "outDir": "build",                    // Output directory for compiled JS
+    "rootDir": "src",                    // Source directory
+    "esModuleInterop": true,             // Allow default imports from CJS
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,                      // Enable all strict type-checking
+    "skipLibCheck": true,
+    "noEmitOnError": true                // Don't emit if there's a type error
+  },
+  "include": ["src"]
+}

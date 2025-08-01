@@ -1,0 +1,38 @@
+{
+  "name": "wakeonlanserver",
+  "version": "1.0.0",
+  "description": "Server api to wake up server and choose grub option",
+  "main": "./build/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "NODE_OPTIONS='--loader ts-node/esm' nodemon --exec ts-node src/index.ts",
+    "start": "node ./build/index.js",
+    "type-check": "tsc --noEmit",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kinator/WakeOnLanAPI.git"
+  },
+  "author": "kinator",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kinator/WakeOnLanAPI/issues"
+  },
+  "homepage": "https://github.com/kinator/WakeOnLanAPI#readme",
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.1.0",
+    "@types/ping": "^0.4.4",
+    "@types/ssh2": "^1.15.5",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "ping": "^0.4.4",
+    "ssh2": "^1.16.0"
+  }
+}
