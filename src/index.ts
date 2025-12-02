@@ -14,6 +14,7 @@ app.use(wakeOnLanRouter)
 console.log(`the server is listening on port ${port}`)
 export const server = app.listen(port)
 
+
 export function stopServer() {
   server.close()
 }
